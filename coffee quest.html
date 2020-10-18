@@ -11,26 +11,26 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="coffee quest v2" startnode="1" creator="Twine" creator-version="2.2.1" ifid="D3A30283-C720-46BA-89FD-10049D727450" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+<tw-storydata name="coffee quest v2" startnode="1" creator="Twine" creator-version="2.2.1" ifid="D3A30283-C720-46BA-89FD-10049D727450" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
  
 body, tw-story
 {
-  font-family: Lato, serif;
+  font-family: Lora, serif;
   font-size: 18px;
   color: white;
   background-image: color(Gray);
 }
 
 tw-link, .enchantment-link {
-    color: #ff7800;
+    color: #63eb00;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.4s ease-in-out;
 }
 
 tw-link:hover, .enchantment-link:hover {
-    color: #ffb900;
-  	text-shadow: 2px 2px 2px #ffb900
+    color: #63eb00;
+  	text-shadow: 0px 0px 6px #b3ff7b
 }
 
 .visited {
@@ -48,42 +48,34 @@ tw-sidebar
 
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="412,452.29998779296875" size="100,100">&lt;h1&gt;coffee quest&lt;/h1&gt;
-It&#39;s your first day of work at your ritzy new job in this big, new city. The cars, the construction, the busy-ness of millions of individuals scurrying about their day without a care for another. Today you woke up with a terrible headache, and it feels like everyone on the sidewalk passes you in a dizzying blur. Your shoes feel a little weird, and your shirt feels a bit tight. You had a bad dream last night but can&#39;t really remember what it was. Something to do with dolphins.
+It&#39;s your first day of work at your ritzy new job in the big city. The cars, the construction, the busyness of millions of individuals scurrying about their day without a care for another has given you a terrible headache, and it seems like everyone on the sidewalk passes you in a dizzying blur. Your shoes feel a little weird, and your shirt feels a bit tight. You had a bad dream last night but can&#39;t really remember what it was. Something to do with dolphins.
 
 [[continue-&gt;shop]]
-</tw-passagedata><tw-passagedata pid="2" name="shop" tags="" position="412,602.2999877929688" size="100,100">You stop by a coffee shop before work. The name is something French in cursive, though that also describes the place across the street. 
+</tw-passagedata><tw-passagedata pid="2" name="shop" tags="" position="412,602.2999877929688" size="100,100">You stop by a coffee shop before work. Caffeine might kill this headache. The name is something French in cursive, though that also describes the place across the street. 
 
-It looks like a jungle of plants indoors, and a dozen people dressed just like you fill up the wicker seating all writing emails to the tune of soft jazz.
+It looks like a jungle of plants indoors, and a dozen well-dressed individuals fill up the wicker seating, all writing emails to the tune of soft jazz.
 
 There&#39;s a short line, and you feel relieved. It&#39;ll give you a chance to think about your order.
-(click-replace: &quot;think&quot;)[overthink]
+(click-replace: &quot;think&quot;)[*overthink*]
 Back at home, you&#39;d usually get a medium iced coffee with milk, no sugar. 
 
-You look at the menu.
-
-(click: &quot;iced coffee&quot;)[Did a place like this even have just iced coffee with milk, no sugar? Was it going to be all cold-brew, nitro, milk foam, frappe nonsense? You wish life could just be simple.]
-
-(click: &quot;milk&quot;)[Were they going to ask you what kind of milk you wanted? Two percent, skim milk, whole milk, soy milk, almond milk, coconut milk, goat milk-wait, that says &quot;oat.&quot; Can you milk an oat? Much in the same way you milk an almond, you suppose.]
-
-(click: &quot;sugar&quot;)[The sugar selection is borderline disturbing. White sugar, brown sugar, honey, agave nectar, Stevia, Truvia, Sugar in the Raw?]
-
-(click: &quot;medium&quot;)[You groan at the thought that they&#39;ll make you call it &quot;grande&quot; like that one place.]
-
-continue
-
-(click-replace: &quot;continue&quot;)[You&#39;re next in [[line]].]
-
+You look at the [[menu.]]
 </tw-passagedata><tw-passagedata pid="3" name="line" tags="" position="412,752.2999877929688" size="100,100">The girl in front of you is paying for her order. You wonder what she got. She has this air of confidence like she&#39;s done this a million times.
 
 {(live: 2s)[Oh no, she got her order. That was fast.]}
 
-{(live: 4s)[Wait, are they going to ask for a name? Shit, what&#39;s your name again?]}
+{(live: 4s)[Wait, are they going to ask for a name? What&#39;s your name again?]}
 
 
 {(live: 6s)[ [[You&#39;re up-&gt;you&#39;re up]].]}
 
-</tw-passagedata><tw-passagedata pid="4" name="you&#39;re up" tags="" position="411,902.2999877929688" size="100,100">(link-repeat: &quot;//iced coffee with milk no sugar//&quot;)[ 
-[[iced coffee with milk no sugar-&gt;sugar]]]</tw-passagedata><tw-passagedata pid="5" name="sugar" tags="" position="411,1052.2999877929688" size="100,100">&quot;Hi, what&#39;ll you be getting today?&quot;
+</tw-passagedata><tw-passagedata pid="4" name="you&#39;re up" tags="" position="411,902.2999877929688" size="100,100">(link: &quot;*iced coffee with milk no sugar*&quot;)[
+(link: &quot;*iced coffee with milk no sugar*&quot;)[
+(link: &quot;*iced coffee with milk no sugar*&quot;)[
+[[iced coffee with milk no sugar-&gt;sugar]]
+]
+]
+]</tw-passagedata><tw-passagedata pid="5" name="sugar" tags="" position="411,1052.2999877929688" size="100,100">&quot;Hi, what&#39;ll you be getting today?&quot;
 
 [[&quot;Uh, umm...&quot;]]
 [[&quot;Iced-coffee-with-milk-no-sugar&quot;]]</tw-passagedata><tw-passagedata pid="6" name="&quot;Uh, umm...&quot;" tags="" position="336,1201.2999877929688" size="100,100">Your face starts to get a little warm, and your eyes flit towards your shoes. There&#39;s a wad of gum stuck on the toe already.
@@ -96,43 +88,59 @@ continue
 </tw-passagedata><tw-passagedata pid="7" name="&quot;Iced-coffee-with-milk-no-sugar&quot;" tags="" position="486,1202.2999877929688" size="100,100">&quot;Oh, what kind of milk would you like?&quot;
 
 [[&quot;Uh, umm...&quot;]] 
-[[&quot;Wait, what kind of milk is there?&quot;]]</tw-passagedata><tw-passagedata pid="8" name="panic" tags="" position="337,1435.2999877929688" size="100,100">Beads of sweat begin to form at your temples. The glare of the stranger behind you bores into your neck. 
+[[&quot;Wait, what kind of milk is there?&quot;]]</tw-passagedata><tw-passagedata pid="8" name="panic" tags="" position="336,1435.2999877929688" size="100,100">Beads of sweat form at your temples. The glare of the stranger behind you bores into your neck. 
 
 You could [[leave]] now and save yourself, or [[stay]] and try to get this coffee.
-</tw-passagedata><tw-passagedata pid="9" name="&quot;Wait, what kind of milk is there?&quot;" tags="" position="486,1352.2999877929688" size="100,100">&quot;Oh, we have two percent, whole, and skim cow&#39;s milk, unsweetened and sweetened almond milk, soy milk, and oat milk, as well as half-and-half and heavy cream if you&#39;d like!&quot; 
+</tw-passagedata><tw-passagedata pid="9" name="&quot;Wait, what kind of milk is there?&quot;" tags="" position="485,1352.2999877929688" size="100,100">&quot;Oh, we have two percent, whole, and skim cow&#39;s milk, unsweetened and sweetened almond milk, soy milk, and oat milk, as well as half-and-half and heavy cream if you&#39;d like!&quot; 
 
 *My god, there&#39;s even more*
 
-[[&quot;What&#39;s the regular...&quot;-&gt;panic]]</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="262,1585.2999877929688" size="100,100">Heart racing, you murmur out &quot;nevermind,&quot; though perhaps only a third of the syllables. You brush past the stranger behind you and wince. Did this line get way longer?
+&quot;[[What&#39;s the usual--&gt;panic]]&quot;</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="262,1585.2999877929688" size="100,100">Heart racing, you murmur out &quot;nevermind,&quot; though perhaps only a third of the syllables. You brush past the stranger behind you and wince. Did this line get way longer?
 
 [[continue-&gt;sidewalk]]</tw-passagedata><tw-passagedata pid="11" name="stay" tags="" position="412,1586.2999877929688" size="100,100">You decide you need this coffee. And nothing is going to stop you.
 
 (click: &quot;nothing&quot;)[Oh dear. You&#39;re feeling dizzy
 (click-append: &quot;dizzy&quot;)[ and dizzier]
-	(click-append: &quot;dizzier&quot;)[[[and dizzier and-&gt;fall]]]
-	]</tw-passagedata><tw-passagedata pid="12" name="sidewalk" tags="" position="262,1735.2999877929688" size="100,100">Fresh air meets your face, and you feel a touch calmer. You smell something a little off, like sewage, but you figure that&#39;s just the city.
+	(click-append: &quot;dizzier&quot;)[[[ and dizzier and-&gt;fall]]]
+	]</tw-passagedata><tw-passagedata pid="12" name="sidewalk" tags="" position="262,1734.2999877929688" size="100,100">Fresh air meets your face, and you feel a touch calmer. You smell something a little off, like sewage, but you figure that&#39;s just the city.
 
 You check your phone.
 (click-replace: &quot;You check your phone.&quot;)[1 Missed Call, Voicemail: Boss]
-(click-replace: &quot;1 Missed Call, Voicemail: Boss&quot;)[Your palms grow sweaty. Not only do you hate voicemail, but phone calls. Unlike coffee, you have no choice here.
+(click-replace: &quot;1 Missed Call, Voicemail: Boss&quot;)[Your palms grow sweaty. Not only do you hate voicemail, but phone calls. Unlike coffee, you have no choice here. Your head pounds. You really wish you got that coffee.
 
 THE END
 ]</tw-passagedata><tw-passagedata pid="13" name="fall" tags="" position="412,1736.2999877929688" size="100,100">//boom.// 
 
 (click: &quot;boom.&quot;)[Your head meets the cold tile floor. Kinda doesn&#39;t feel like much. Never really does.] 
 
+(click: &quot;Never really does.&quot;)[Bright lights never did sit well with you. Maybe it was the blender going with the people talking next to the music and your terrible headache- 
 
-(click: &quot;Never really does.&quot;)[Bright lights never did sit well with you. Maybe it was the blender going with the people talking next to the music and your terrible headache-]
-
-(click: &quot;and-&quot;)[[[&quot;Are you okay!?&quot;-&gt;help]]]</tw-passagedata><tw-passagedata pid="14" name="help" tags="" position="412,1886.2999877929688" size="100,100">You hate this part--the part where a stranger gets involved in your life and pops the invisible bubble between you and everyone else.
+{(live: 2s)[&quot;[[Are you okay!?-&gt;help]]&quot;]}
+]</tw-passagedata><tw-passagedata pid="14" name="help" tags="" position="412,1886.2999877929688" size="100,100">You hate this part--the part where a stranger gets involved in your life and pops the invisible bubble between you and everyone else.
 
 &quot;Do we need to call an ambulance?&quot;
 
 (click: &quot;ambulance&quot;)[*No, no. I&#39;m fine.*]
 
-(click: &quot;fine&quot;)[Even though you clearly aren&#39;t, they back off. What feels like just a couple of seconds later, you get up, and wander out of the shop, your order sitting on the counter gathering condensation. Your pocket keeps buzzing away, but that&#39;s not really important right now. You have a killer headache.
+(click: &quot;fine&quot;)[Even though you clearly aren&#39;t, they back off. What feels like just a couple of seconds later, you get up, and wander out of the shop, your order sitting on the counter gathering condensation. Your pocket keeps buzzing away, but that&#39;s not really important right now. This headache is killing you.
 
-THE END]</tw-passagedata></tw-storydata>
+THE END]</tw-passagedata><tw-passagedata pid="15" name="menu." tags="" position="546,675.2999877929688" size="100,100">**MENU**
+
+|text&gt;[
+(link: &quot;Coffee&quot;)[Frappes, nitro cold brew, cappuccinos, pumpkin spice chai lattes... Did a place like this even have just iced coffee with milk, no sugar? You wish life could just be simple.]
+
+(link: &quot;Milk options&quot;)[Oh no. Were they going to ask you what kind of milk you wanted? Two percent, skim milk, whole milk, soy milk, almond milk, coconut milk, goat milk-wait, that says &quot;oat.&quot; Can you milk an oat? Much in the same way you milk an almond, you suppose.]
+
+(link: &quot;Sugar options&quot;)[The sugar selection is borderline disturbing. White sugar, brown sugar, honey, agave nectar, Stevia, Truvia, Sugar in the *Raw*?]
+
+(link: &quot;Sizes&quot;)[8oz Small, 12oz Medium. Phew. Nothing dumb like &quot;venti.&quot;]
+]
+
+(live: 15s)[
+	(replace: ?text)[Shit. You&#39;re next in [[line]].]
+	(stop:)
+]
+</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
