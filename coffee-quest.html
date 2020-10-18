@@ -51,16 +51,17 @@ tw-sidebar
 It&#39;s your first day of work at your ritzy new job in the big city. The cars, the construction, the busyness of millions of individuals scurrying about their day without a care for another has given you a terrible headache, and it seems like everyone on the sidewalk passes you in a dizzying blur. Your shoes feel a little weird, and your shirt feels a bit tight. You had a bad dream last night but can&#39;t really remember what it was. Something to do with dolphins.
 
 [[continue-&gt;shop]]
-</tw-passagedata><tw-passagedata pid="2" name="shop" tags="" position="412,602.2999877929688" size="100,100">You stop by a coffee shop before work. Caffeine might kill this headache. The name is something French in cursive, though that also describes the place across the street. 
+</tw-passagedata><tw-passagedata pid="2" name="shop" tags="" position="412,603.2999877929688" size="100,100">Caffeine might kill this headache. You stop by a coffee shop before work. The name is something French in cursive, though that also describes the place across the street. 
 
-It looks like a jungle of plants indoors, and a dozen well-dressed individuals fill up the wicker seating, all writing emails to the tune of soft jazz.
+(click: &quot;coffee shop&quot;)[It looks like a jungle of plants indoors, and a dozen well-dressed individuals fill up the wicker seating, all writing emails to the tune of soft jazz.
 
 There&#39;s a short line, and you feel relieved. It&#39;ll give you a chance to think about your order.
 (click-replace: &quot;think&quot;)[*overthink*]
-Back at home, you&#39;d usually get a medium iced coffee with milk, no sugar. 
+(click: &quot;order&quot;)[Back home, you&#39;d usually get a medium iced coffee with milk, no sugar. What do they have around here?
 
 You look at the [[menu.]]
-</tw-passagedata><tw-passagedata pid="3" name="line" tags="" position="412,752.2999877929688" size="100,100">The girl in front of you is paying for her order. You wonder what she got. She has this air of confidence like she&#39;s done this a million times.
+]
+]</tw-passagedata><tw-passagedata pid="3" name="line" tags="" position="412,752.2999877929688" size="100,100">The girl in front of you is paying for her order. You wonder what she got. She has this air of confidence like she&#39;s done this a million times.
 
 {(live: 2s)[Oh no, she got her order. That was fast.]}
 
@@ -95,7 +96,7 @@ You could [[leave]] now and save yourself, or [[stay]] and try to get this coffe
 
 *My god, there&#39;s even more*
 
-&quot;[[What&#39;s the usual--&gt;panic]]&quot;</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="262,1585.2999877929688" size="100,100">Heart racing, you murmur out &quot;nevermind,&quot; though perhaps only a third of the syllables. You brush past the stranger behind you and wince. Did this line get way longer?
+&quot;[[What&#39;s the usual—-&gt;panic]]&quot;</tw-passagedata><tw-passagedata pid="10" name="leave" tags="" position="262,1585.2999877929688" size="100,100">Heart racing, you murmur out &quot;nevermind,&quot; though perhaps only a third of the syllables. You brush past the stranger behind you and wince. Did this line get way longer?
 
 [[continue-&gt;sidewalk]]</tw-passagedata><tw-passagedata pid="11" name="stay" tags="" position="412,1586.2999877929688" size="100,100">You decide you need this coffee. And nothing is going to stop you.
 
@@ -113,30 +114,28 @@ THE END
 
 (click: &quot;boom.&quot;)[Your head meets the cold tile floor. Kinda doesn&#39;t feel like much. Never really does.] 
 
-(click: &quot;Never really does.&quot;)[Bright lights never did sit well with you. Maybe it was the blender going with the people talking next to the music and your terrible headache- 
+(click: &quot;Never really does.&quot;)[Bright lights never did sit well with you. Maybe it was the blender going with the people talking next to the music and your terrible headache—
 
 {(live: 2s)[&quot;[[Are you okay!?-&gt;help]]&quot;]}
-]</tw-passagedata><tw-passagedata pid="14" name="help" tags="" position="412,1886.2999877929688" size="100,100">You hate this part--the part where a stranger gets involved in your life and pops the invisible bubble between you and everyone else.
-
-&quot;Do we need to call an ambulance?&quot;
+]</tw-passagedata><tw-passagedata pid="14" name="help" tags="" position="412,1886.2999877929688" size="100,100">All you hear is the word &quot;ambulance.&quot;
 
 (click: &quot;ambulance&quot;)[*No, no. I&#39;m fine.*]
 
-(click: &quot;fine&quot;)[Even though you clearly aren&#39;t, they back off. What feels like just a couple of seconds later, you get up, and wander out of the shop, your order sitting on the counter gathering condensation. Your pocket keeps buzzing away, but that&#39;s not really important right now. This headache is killing you.
+(click: &quot;fine&quot;)[Even though you clearly aren&#39;t, they back off. What feels like just a couple of seconds later, you get up, and wander out of the shop, no coffee in hand. Your pocket keeps buzzing away, but that&#39;s not really important right now. This headache is killing you.
 
 THE END]</tw-passagedata><tw-passagedata pid="15" name="menu." tags="" position="546,675.2999877929688" size="100,100">**MENU**
 
 |text&gt;[
 (link: &quot;Coffee&quot;)[Frappes, nitro cold brew, cappuccinos, pumpkin spice chai lattes... Did a place like this even have just iced coffee with milk, no sugar? You wish life could just be simple.]
 
-(link: &quot;Milk options&quot;)[Oh no. Were they going to ask you what kind of milk you wanted? Two percent, skim milk, whole milk, soy milk, almond milk, coconut milk, goat milk-wait, that says &quot;oat.&quot; Can you milk an oat? Much in the same way you milk an almond, you suppose.]
+(link: &quot;Milk options&quot;)[Oh no. Were they going to ask you what kind of milk you wanted? Two percent, skim milk, whole milk, soy milk, almond milk, coconut milk, goat milk—wait, that says &quot;oat.&quot; Can you milk an oat? Much in the same way you milk an almond, you suppose.]
 
 (link: &quot;Sugar options&quot;)[The sugar selection is borderline disturbing. White sugar, brown sugar, honey, agave nectar, Stevia, Truvia, Sugar in the *Raw*?]
 
 (link: &quot;Sizes&quot;)[8oz Small, 12oz Medium. Phew. Nothing dumb like &quot;venti.&quot;]
 ]
 
-(live: 15s)[
+(live: 12s)[
 	(replace: ?text)[Shit. You&#39;re next in [[line]].]
 	(stop:)
 ]
